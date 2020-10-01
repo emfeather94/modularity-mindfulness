@@ -75,7 +75,8 @@ article h2 {
 }
 
 article p {
-  margin-top: 1rem;
+  margin: 1.5rem 0;
+
 }
 
 h3 {
@@ -83,10 +84,156 @@ h3 {
   font-size: 1rem;
 }
 
+.button {
+  border: .2rem solid #3783a3;
+  border-radius: .3rem;
+  color: #3783a3;
+  padding: .5rem 1rem;
+  display: block;
+  text-decoration: none;
+}
+
+.viewing,
+.gravel,
+.symbol {
+  margin-bottom: 1.5rem;
+}
+
+footer {
+  font-size: .75rem;
+  text-align: center;
+}
+
 @media only screen and (min-width: 38em) {
 
   html {
     font-size: 110%;
     line-height: 1.4;
+  }
+
+  body {
+    margin: 0;
+    padding: 1rem;
+    display: grid;
+    grid-template-areas:
+      "header header header"
+      "main   main   main"
+      "footer footer footer";
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 20rem 1fr 10rem;
+  }
+
+  header {
+    text-align: left;
+    grid-area: header;
+  }
+
+  main {
+    grid-area: main;
+  }
+
+  header nav {
+    display: grid;
+    justify-content: flex-end;
+  }
+
+  ul {
+    margin: 0;
+    grid-column: 3;
+    grid-row: 1;
+    display: flex;
+    padding: 0;
+  }
+
+  li {
+    padding-bottom: 1rem;
+    padding-left: 2rem;
+    list-style-type: none;
+    font-size: 1.125rem;
+  }
+
+  a {
+    color: #3783a3;
+  }
+  h1 {
+    margin: 0;
+  }
+
+  header h2 {
+    font-size: 1.125rem;
+    margin: 0;
+  }
+
+  .intro {
+    margin: 3rem 1rem;
+    text-align: center;
+  }
+
+  section h2 {
+    font-size: 2rem;
+  }
+
+  section p {
+    margin: 0;
+  }
+
+  img {
+    display: block;
+    width: 100%;
+    max-width: 30em;
+  }
+
+  article h2 {
+    margin-bottom: 0;
+  }
+
+  article p {
+    margin: 1.5rem 0;;
+
+  }
+
+  h3 {
+    margin: 0;
+    font-size: 1rem;
+  }
+
+  .button {
+    border: .2rem solid #3783a3;
+    border-radius: .3rem;
+    color: #3783a3;
+    padding: .5rem 1rem;
+    display: block;
+    text-decoration: none;
+  }
+
+  article {
+    display: grid;
+  }
+
+  .viewing,
+  .gravel,
+  .symbol {
+    margin-bottom: 1.5rem;
+  }
+
+  .viewing {
+    grid-column: 1;
+    grid-row: 2;
+  }
+
+  .gravel {
+    grid-column: 2;
+    grid-row: 2;
+  }
+
+  .symbol {
+    grid-column: 3;
+    grid-row: 2;
+  }
+
+  footer {
+    font-size: .75rem;
+    text-align: center;
+    grid-area: footer;
   }
 }
