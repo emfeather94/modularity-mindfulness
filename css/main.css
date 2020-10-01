@@ -19,9 +19,74 @@ html {
 
 body {
   margin: 0;
+  padding: 1rem;
+}
+
+header {
+  text-align: center;
+}
+
+h1 {
+  margin: 0;
+}
+
+header h2 {
+  font-size: 1.125rem;
+  margin: 0;
+}
+
+.intro {
+  margin: 3rem 1rem;
+  text-align: center;
+}
+
+section h2 {
+  font-size: 2rem;
+}
+
+section p {
+  margin: 0;
+}
+
+ul {
+  margin: 0;
+  padding: 0 1rem;
+  display: flex;
+  justify-content: space-between;
+}
+
+li {
+  padding-bottom: 1rem;
+  list-style-type: none;
+  font-size: 1.125rem;
+}
+
+a {
+  color: #3783a3;
 }
 
 img {
   display: block;
   width: 100%;
+}
+
+article h2 {
+  margin-bottom: 0;
+}
+
+article p {
+  margin-top: 1rem;
+}
+
+h3 {
+  margin: 0;
+  font-size: 1rem;
+}
+
+@media only screen and (min-width: 38em) {
+
+  html {
+    font-size: 110%;
+    line-height: 1.4;
+  }
 }
