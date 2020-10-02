@@ -120,7 +120,7 @@ footer {
       "main   main   main"
       "footer footer footer";
     grid-template-columns: 1fr 1fr 1fr;
-    grid-template-rows: 15rem 50rem;
+    grid-template-rows: 12rem 50rem;
   }
 
   header {
@@ -133,9 +133,12 @@ footer {
     display: grid;
   }
 
-  header nav {
+  .banner {
     display: grid;
-    justify-content: flex-end;
+  }
+
+  header nav {
+    display: inline-block;
   }
 
   ul {
@@ -143,14 +146,14 @@ footer {
     grid-column: 3;
     grid-row: 1;
     display: flex;
-    padding: 0;
+    padding-left: 8rem;
+    justify-content: flex-end;
   }
 
   li {
-    padding-bottom: 1rem;
-    padding-left: 2rem;
+    padding-left: 1rem;
     list-style-type: none;
-    font-size: 1.125rem;
+    font-size: 1rem;
   }
 
   a {
@@ -159,20 +162,25 @@ footer {
 
   h1 {
     margin: 0;
+    font-size: 2rem;
   }
 
   header h2 {
-    font-size: 1rem;
+    font-size: 1.125rem;
     margin: 0;
   }
 
+  .logo {
+    display: inline-block;
+  }
+
   .intro {
-    margin: 1rem;
+    margin: 0 1.5rem;
     text-align: center;
   }
 
   section h2 {
-    font-size: 1.5rem;
+    font-size: 2rem;
   }
 
   section p {
